@@ -13,3 +13,9 @@ body{
     display: grid;
     grid-template-columns: 14rem auto 14rem;
 }
+
+ul li{
+    width: 300px;
+    height: 100%;
+    padding: 15px 0px 15px 1%;
+}
