@@ -1,0 +1,15 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 14rem auto 14rem;
+}
