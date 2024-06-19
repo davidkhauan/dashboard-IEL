@@ -61,3 +61,161 @@ body{
     border-radius: 10px;
 
 }
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    list-style: none;
+    appearance: none;
+}
+
+:root{
+    --color-primary: #6C9BCF;
+    --color-danger: #FF0060;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+body{
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background: var(--clr-color-background);
+}
+
+.container{
+    display: grid;
+    width: 96%;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 14rem;
+    margin: 0 auto;
+
+}
+.profile-photo img{
+    width: 30px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.text-muted{
+    color: var(--color-info-dark);
+
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+
+.sucess{
+    color: var(--color-success);
+}
+
+.warring{
+    color: var(--color-warning);
+}
+
+
+aside{
+    height: 100vh;
+}
+
+aside .top{
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+aside .logo{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.updates{
+    background-color: grey;
+    display: flex;
+    margin: 40px;  
+}
+.update-div{
+    background-color: grey;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+
+}
+
+main {
+    margin-top: 1.4rem;
+    width: auto;
+}
+
+main input{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--clr-dark);
+}
+
+main .date{
+    display: inline-block;
+    background-color: var(--clr-white);
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6;
+}
+
+main .insights>div{
+    background-color: var(--clr-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all .3s ease;
+}
+
+main .insights > div:hover{
+    box-shadow: none;
+}
+
