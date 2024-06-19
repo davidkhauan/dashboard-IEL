@@ -4,7 +4,6 @@
     box-sizing: border-box;
     list-style: none;
 }
-
 body{
     background: white;
 }
@@ -13,7 +12,20 @@ body{
     display: grid;
     grid-template-columns: 14rem auto 14rem;
 }
-
-.meio .superior {
+.profile-photo img{
+    width: 30px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.updates{
+    background-color: grey;
     display: flex;
+    margin: 40px;  
+}
+.update-div{
+    background-color: grey;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+
 }
