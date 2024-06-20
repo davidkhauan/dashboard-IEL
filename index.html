@@ -30,62 +30,38 @@
 
             <main>
                 <h1>Dashboard</h1>
-            <div class="date"> 
-                <input type="date">
-            </div>
-            <div class="insights">
-                <div class="sales">
-                    <span class="material-symbols-sharp"><i class="bi bi-arrow-up-right"></i></span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total Sales</h3>
-                            <h1>R$25,00</h1>
+                <div class="meio-superior">
+                    <div class="card" id="card-um">
+                        <div class="icone-fundo">
+                            <i>icone</i>
                         </div>
-                        <div class="progresso">
-                            <svg>
-                                <circle r="30" cy="40" cx="40"></circle>
-                            </svg>
-                            <div class="number">80%</div>
+                        <h2>Vendas Totais</h2>
+                        <h3>US$ 25.024</h3>
+                        <div class="icone-fundo">
+                            <i>icone</i>
                         </div>
                     </div>
-                    <small>Last 24 Hours</small>
+                    <div class="card" id="card-dois">
+                        <div class="icone-fundo">
+                            <i>icone</i>
+                        </div>
+                        <h2>Despesas Totais</h2>
+                        <h3>US$ 14.180</h3>
+                        <div class="icone-fundo">
+                            <i>icone</i>
+                        </div>
+                    </div>
+                    <div class="card" id="card-tres">
+                        <div class="icone-fundo">
+                            <i>icone</i>
+                        </div>
+                        <h2>Renda Total</h2>
+                        <h3>US$ 10.864</h3>
+                        <div class="icone-fundo">
+                            <i>icone</i>
+                        </div>
+                    </div>
                 </div>
-
-                    <div class="expenses">
-                        <span class="material-symbols-sharp"><i class="bi bi-bar-chart-fill"></i></span>
-                        <div class="middle">
-                            <div class="left">
-                                <h3>Total Expenses</h3>
-                                <h1>R$14,16</h1>
-                            </div>
-                            <div class="progresso">
-                                <svg>
-                                    <circle r="30" cy="40" cx="40"></circle>
-                                </svg>
-                                <div class="number">80%</div>
-                            </div>
-                        </div>
-                        <small>Last 24 Hours</small>
-                    </div>
-
-                    <div class="income">
-                        <span class="material-symbols-sharp"><i class="bi bi-box2-heart-fill"></i></span>
-                        <div class="middle">
-                            <div class="left">
-                                <h3>Total Income</h3>
-                                <h1>R$10,864</h1>
-                            </div>
-                            <div class="progresso">
-                                <svg>
-                                    <circle r="30" cy="40" cx="40"></circle>
-                                </svg>
-                                <div class="number">80%</div>
-                            </div>
-                        </div>
-                        <small>Last 24 Hours</small>
-                    </div>
-            </div>
-
 
                 <div class="meio-inferior">
                     <h1>Recent Orders</h1>
@@ -106,62 +82,48 @@
                                 <td>Due</td>
                                 <td>Pending</td>
                                 <td>Details</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>
                             </tr>
                             <tr>
                                 <td>LARVENDER KF102 Drone</td>
                                 <td>36378</td>
                                 <td>Refunded</td>
                                 <td>Declined</td>
-                                <td>Details</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>       
+                                <td>Details</td>          
                             </tr>
                             <tr>
                                 <td>Ruko F11 Pro Drone</td>
                                 <td>49347</td>
                                 <td>Due</td>
                                 <td>Pending</td>
-                                <td>Details</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>     
+                                <td>Details</td>       
                             </tr>
                             <tr>
                                 <td>Drone with Camera Drone</td>
                                 <td>96996</td>
                                 <td>Pald</td>
                                 <td>Delivered</td>
-                                <td>Details</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>         
+                                <td>Details</td>         
                             </tr>
                             <tr>
                                 <td>GPS 4k Drone</td>
                                 <td>22821</td>
                                 <td>Pald</td>
                                 <td>Delivered</td>
-                                <td>Details</td> 
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>       
+                                <td>Details</td>        
                             </tr>
                             <tr>
                                 <td>DJI Air 2S</td>
                                 <td>81475</td>
                                 <td>Due</td>
                                 <td>Pending</td>
-                                <td>Details</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>         
+                                <td>Details</td>         
                             </tr>
                             <tr>
                                 <td>Lozenge Drone</td>
                                 <td>00482</td>
                                 <td>Pald</td>
                                 <td>Delivered</td>
-                                <td>Details</td>
-                                <td class="warning">Pending</td>
-                                <td class="primary">Details</td>          
+                                <td>Details</td>          
                             </tr>
                         </tbody>
                     </table>
@@ -171,6 +133,18 @@
             </main>
 
             <div class="right">
+                <div class="top">
+                    <button id="escuro">
+                        <i class="bi bi-brightness-high-fill"></i></button>
+                    <div class="profile">
+                        <div class="aparencia">
+                            <button id="escuro"><i class="bi bi-brightness-high-fill"></i></button>
+                            <button id="claro"><i class="bi bi-moon-fill"></i></i></button>
+                        </div>
+                        <p>Olá, <b>Usuário</b></p>
+                    </div>
+                </div>
+                
                 <div class="recent-updates">
                     <h3>Recent Updates</h3>
                     <div class="update-div">
@@ -208,7 +182,7 @@
                             </div>
                             <div class="right-texts">
                                 <div class="info">
-                                    <h3>VENDAS ONLINE</h3>
+                                    <h5>VENDAS ONLINE</h5>
                                     <small class="text">Visto por último há 2 horas</small>
                                     <h5 class="danger">15%</h5>
                                     <h3>2849</h3>
@@ -221,7 +195,7 @@
                             </div>
                             <div class="right-texts">
                                 <div class="info">
-                                    <h3>VENDAS OFFILINE</h3>
+                                    <h5>VENDAS OFFILINE</h5>
                                     <small class="text">Visto por último há 2 horas</small>
                                     <h5 class="danger">15%</h5>
                                     <h3>2849</h3>
@@ -234,7 +208,7 @@
                             </div>
                             <div class="right-texts">
                                 <div class="info">
-                                    <h3>NOVOS CLIENTES</h3>
+                                    <h5>NOVOS CLIENTES</h5>
                                     <small class="text">Visto por último há 2 horas</small>
                                     <h5 class="danger">15%</h5>
                                     <h3>2849</h3>
