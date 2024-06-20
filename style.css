@@ -45,6 +45,108 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+aside img{ 
+    height: 50px;
+    width: 50px;}
+
+a{
+    color: var(--color-dark);
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;   
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8;
+}
+
+aside{
+    height: 100vh;
+}
+
+aside .top{
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+aside .logo{
+    display: flex;
+    gap: 1rem;
+}
+
+aside .sidebar{
+    background-color: var(purple);
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    position: relative;
+    top: 1rem; 
+}
+
+aside .h3{
+    font-weight: 400;
+}
+
+aside .sidebar a{
+    display: flex;
+    color: var(purple);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    height: 3.2rem;
+    transition: all .1s ease-in;
+}
+
+aside .sidebar a span{
+    transition: all .1s ease-in;
+}
+
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+
+aside .sidebar a.active{
+    background:  #6c9acf8e ;
+    color: rgb(66, 0, 128);
+    margin-left: 0;
+    border-left: 5px solid purple;
+}
+
+aside .sidebar span{
+    background-color: rgba(255, 0, 0, 0.822);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+aside .sidebar a.active::before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: purple;
+}
+aside .sidebar a:hover{
+    color: purple;
+}
+
 main {
     background-color: burlywood;
     border: 2px solid blue;
@@ -200,11 +302,6 @@ main .recent_order table{
     display: flex;
 }
 
-/* Az */
-aside {
-    background-color: cadetblue;
-    border: 2px solid red;
-}
 
 main {
     background-color: burlywood;

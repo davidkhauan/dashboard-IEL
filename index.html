@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="style.css">
-        <title>Dashboard Responsivo - IEL</title>
-    </head>
 
-    <body>
-        <div class="container">
-            <aside>
-                <img src="assets/logo.png" alt="">
-                <h1>EGATOR</h1>
-                <ul>
-                    <li><i class="bi bi-columns-gap"> Dashboard </i></li>
-                    <li><i class="bi bi-person"> Costumers </i></li>
-                    <li><i class="bi bi-card-list"> Orders </i></li>
-                    <li><i class="bi bi-graph-up-arrow"> Analytics </i></li>
-                    <li><i class="bi bi-envelope"> Messages </i></li>
-                    <li><i class="bi bi-clipboard-check"> Products </i></li>
-                    <li><i class="bi bi-exclamation-circle"> Reports </i></li>
-                    <li><i class="bi bi-gear-fill"> Settings </i></li>
-                    <li><i class="bi bi-plus"> Add Product </i></li>
-                    <li><i class="bi bi-box-arrow-right"> Logout </i></li>
-                </ul>
-            </aside>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard Responsivo - IEL</title>
+</head>
 
-            <main>
-                <h1>Dashboard</h1>
-            <div class="date"> 
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                    <h1>EGA<span class="roxo">TOR</span></h1>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <h3><i class="bi bi-columns-gap"></i> Painel</h3>
+                </a>
+
+                <a href="#">
+                    <h3><i class="bi bi-person"></i> Clientes</h3>
+                </a>
+
+                <a href="#">
+                    <h3><i class="bi bi-card-list"></i> Pedidos</h3>
+                </a>
+
+                <a href="#">
+                    <h3><i class="bi bi-graph-up-arrow"></i> Analises</h3>
+                </a>
+
+                <a href="#">
+                    <h3><i class="bi bi-envelope"></i> Mensagens<span>24</span></h3>
+                </a>
+
+                <a href="#">
+                    <h3><i class="bi bi-clipboard-check"></i> Produtos </h3>
+                </a>
+
+                <a href="#">
+                    <h3><i class="bi bi-exclamation-circle"></i> Relatórios </h3>
+                </a>
+
+                <a href="#">
+                    <h3><i class="bi bi-gear-fill"></i> Configurações </h3>
+                </a>
+
+                <a href="#">
+                    <h3><i class="bi bi-plus"></i> Adicionar produto </h3>
+                </a>
+
+                <a href="#">
+                    <h3><i class="bi bi-box-arrow-right"></i>Sair</h3>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
                 <input type="date">
             </div>
             <div class="insights">
@@ -51,229 +84,230 @@
                     <small>Last 24 Hours</small>
                 </div>
 
-                    <div class="expenses">
-                        <span class="material-symbols-sharp"><i class="bi bi-bar-chart-fill"></i></span>
-                        <div class="middle">
-                            <div class="left">
-                                <h3>Total Expenses</h3>
-                                <h1>R$14,16</h1>
-                            </div>
-                            <div class="progresso">
-                                <svg>
-                                    <circle r="30" cy="40" cx="40"></circle>
-                                </svg>
-                                <div class="number">80%</div>
-                            </div>
+                <div class="expenses">
+                    <span class="material-symbols-sharp"><i class="bi bi-bar-chart-fill"></i></span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>R$14,16</h1>
                         </div>
-                        <small>Last 24 Hours</small>
+                        <div class="progresso">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <div class="number">80%</div>
+                        </div>
                     </div>
+                    <small>Last 24 Hours</small>
+                </div>
 
-                    <div class="income">
-                        <span class="material-symbols-sharp"><i class="bi bi-box2-heart-fill"></i></span>
-                        <div class="middle">
-                            <div class="left">
-                                <h3>Total Income</h3>
-                                <h1>R$10,864</h1>
-                            </div>
-                            <div class="progresso">
-                                <svg>
-                                    <circle r="30" cy="40" cx="40"></circle>
-                                </svg>
-                                <div class="number">80%</div>
-                            </div>
+                <div class="income">
+                    <span class="material-symbols-sharp"><i class="bi bi-box2-heart-fill"></i></span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>R$10,864</h1>
                         </div>
-                        <small>Last 24 Hours</small>
+                        <div class="progresso">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <div class="number">80%</div>
+                        </div>
                     </div>
+                    <small>Last 24 Hours</small>
+                </div>
             </div>
-                <div class="meio-superior">
-                    <div class="card" id="card-um">
-                        <div class="icone-fundo">
-                            <i>icone</i>
-                        </div>
-                        <h2>Vendas Totais</h2>
-                        <h3>US$ 25.024</h3>
-                        <div class="icone-fundo">
-                            <i>icone</i>
-                        </div>
+            <div class="meio-superior">
+                <div class="card" id="card-um">
+                    <div class="icone-fundo">
+                        <i>icone</i>
                     </div>
-                    <div class="card" id="card-dois">
-                        <div class="icone-fundo">
-                            <i>icone</i>
-                        </div>
-                        <h2>Despesas Totais</h2>
-                        <h3>US$ 14.180</h3>
-                        <div class="icone-fundo">
-                            <i>icone</i>
-                        </div>
-                    </div>
-                    <div class="card" id="card-tres">
-                        <div class="icone-fundo">
-                            <i>icone</i>
-                        </div>
-                        <h2>Renda Total</h2>
-                        <h3>US$ 10.864</h3>
-                        <div class="icone-fundo">
-                            <i>icone</i>
-                        </div>
+                    <h2>Vendas Totais</h2>
+                    <h3>US$ 25.024</h3>
+                    <div class="icone-fundo">
+                        <i>icone</i>
                     </div>
                 </div>
-
-                <div class="meio-inferior">
-                    <h1>Recent Orders</h1>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Product Name</th>
-                                <th>Product Number</th>
-                                <th>Payment</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>Foldoble Mini Drone</td>
-                                <td>85631</td>
-                                <td>Due</td>
-                                <td>Pending</td>
-                                <td>Details</td>
-                            </tr>
-                            <tr>
-                                <td>LARVENDER KF102 Drone</td>
-                                <td>36378</td>
-                                <td>Refunded</td>
-                                <td>Declined</td>
-                                <td>Details</td>          
-                            </tr>
-                            <tr>
-                                <td>Ruko F11 Pro Drone</td>
-                                <td>49347</td>
-                                <td>Due</td>
-                                <td>Pending</td>
-                                <td>Details</td>       
-                            </tr>
-                            <tr>
-                                <td>Drone with Camera Drone</td>
-                                <td>96996</td>
-                                <td>Pald</td>
-                                <td>Delivered</td>
-                                <td>Details</td>         
-                            </tr>
-                            <tr>
-                                <td>GPS 4k Drone</td>
-                                <td>22821</td>
-                                <td>Pald</td>
-                                <td>Delivered</td>
-                                <td>Details</td>        
-                            </tr>
-                            <tr>
-                                <td>DJI Air 2S</td>
-                                <td>81475</td>
-                                <td>Due</td>
-                                <td>Pending</td>
-                                <td>Details</td>         
-                            </tr>
-                            <tr>
-                                <td>Lozenge Drone</td>
-                                <td>00482</td>
-                                <td>Pald</td>
-                                <td>Delivered</td>
-                                <td>Details</td>          
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <p>Show All</p>
-                </div>
-            </main>
-
-            <div class="right">
-                <div class="top">
-                    <button id="escuro">
-                        <i class="bi bi-brightness-high-fill"></i></button>
-                    <div class="profile">
-                        <div class="aparencia">
-                            <button id="escuro"><i class="bi bi-brightness-high-fill"></i></button>
-                            <button id="claro"><i class="bi bi-moon-fill"></i></i></button>
-                        </div>
-                        <p>Olá, <b>Usuário</b></p>
+                <div class="card" id="card-dois">
+                    <div class="icone-fundo">
+                        <i>icone</i>
+                    </div>
+                    <h2>Despesas Totais</h2>
+                    <h3>US$ 14.180</h3>
+                    <div class="icone-fundo">
+                        <i>icone</i>
                     </div>
                 </div>
-                
-                <div class="recent-updates">
-                    <h3>Recent Updates</h3>
-                    <div class="update-div">
-                        <div class="updates">
-                            <div class="profile-photo">
-                                <img src="assets/profile-2.jpg" alt="Mike Tyson">
-                            </div>
-                            <div class="msg">
-                                <p><b>Mike Tyson</b> Recebeu o pedido</p>
-                            </div>
-                        </div>
-                        <div class="updates">
-                            <div class="profile-photo">
-                                <img src="assets/profile-3.jpg" alt="Diana Ayl">
-                            </div>
-                            <div class="msg">
-                                <p><b>Diana Ayl</b> Recebeu o pedido</p>
-                            </div>
-                        </div>
-                        <div class="updates">
-                            <div class="profile-photo">
-                                <img src="assets/profile-4.jpg" alt="Diana Ayl">
-                            </div>
-                            <div class="msg">
-                                <p><b>Andreia Al</b> Recebeu o pedido</p>
-                            </div>
-                        </div>
+                <div class="card" id="card-tres">
+                    <div class="icone-fundo">
+                        <i>icone</i>
                     </div>
-
-                    <div class="sales-analytics">
-                        <h3>Sales Analytics</h3>
-                        <div class="itens">
-                            <div class="icon">
-                                <span class="bi bi-cart-fill"></span>
-                            </div>
-                            <div class="right-texts">
-                                <div class="info">
-                                    <h5>VENDAS ONLINE</h5>
-                                    <small class="text">Visto por último há 2 horas</small>
-                                    <h5 class="danger">15%</h5>
-                                    <h3>2849</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="itens">
-                            <div class="icon">
-                                <span class="bi bi-bag-fill"></span>
-                            </div>
-                            <div class="right-texts">
-                                <div class="info">
-                                    <h5>VENDAS OFFILINE</h5>
-                                    <small class="text">Visto por último há 2 horas</small>
-                                    <h5 class="danger">15%</h5>
-                                    <h3>2849</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="itens">
-                            <div class="icon">
-                                <span class="bi bi-people-fill"></span>
-                            </div>
-                            <div class="right-texts">
-                                <div class="info">
-                                    <h5>NOVOS CLIENTES</h5>
-                                    <small class="text">Visto por último há 2 horas</small>
-                                    <h5 class="danger">15%</h5>
-                                    <h3>2849</h3>
-                                </div>
-                            </div>
-                        </div>
+                    <h2>Renda Total</h2>
+                    <h3>US$ 10.864</h3>
+                    <div class="icone-fundo">
+                        <i>icone</i>
                     </div>
                 </div>
-
-                <button id="add-product">+ Adicionar produto</button>
             </div>
-    </body>
+
+            <div class="meio-inferior">
+                <h1>Recent Orders</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Foldoble Mini Drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td>Pending</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>LARVENDER KF102 Drone</td>
+                            <td>36378</td>
+                            <td>Refunded</td>
+                            <td>Declined</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>Ruko F11 Pro Drone</td>
+                            <td>49347</td>
+                            <td>Due</td>
+                            <td>Pending</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>Drone with Camera Drone</td>
+                            <td>96996</td>
+                            <td>Pald</td>
+                            <td>Delivered</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>GPS 4k Drone</td>
+                            <td>22821</td>
+                            <td>Pald</td>
+                            <td>Delivered</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>DJI Air 2S</td>
+                            <td>81475</td>
+                            <td>Due</td>
+                            <td>Pending</td>
+                            <td>Details</td>
+                        </tr>
+                        <tr>
+                            <td>Lozenge Drone</td>
+                            <td>00482</td>
+                            <td>Pald</td>
+                            <td>Delivered</td>
+                            <td>Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Show All</p>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="top">
+                <button id="escuro">
+                    <i class="bi bi-brightness-high-fill"></i></button>
+                <div class="profile">
+                    <div class="aparencia">
+                        <button id="escuro"><i class="bi bi-brightness-high-fill"></i></button>
+                        <button id="claro"><i class="bi bi-moon-fill"></i></i></button>
+                    </div>
+                    <p>Olá, <b>Usuário</b></p>
+                </div>
+            </div>
+
+            <div class="recent-updates">
+                <h3>Recent Updates</h3>
+                <div class="update-div">
+                    <div class="updates">
+                        <div class="profile-photo">
+                            <img src="assets/profile-2.jpg" alt="Mike Tyson">
+                        </div>
+                        <div class="msg">
+                            <p><b>Mike Tyson</b> Recebeu o pedido</p>
+                        </div>
+                    </div>
+                    <div class="updates">
+                        <div class="profile-photo">
+                            <img src="assets/profile-3.jpg" alt="Diana Ayl">
+                        </div>
+                        <div class="msg">
+                            <p><b>Diana Ayl</b> Recebeu o pedido</p>
+                        </div>
+                    </div>
+                    <div class="updates">
+                        <div class="profile-photo">
+                            <img src="assets/profile-4.jpg" alt="Diana Ayl">
+                        </div>
+                        <div class="msg">
+                            <p><b>Andreia Al</b> Recebeu o pedido</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sales-analytics">
+                    <h3>Sales Analytics</h3>
+                    <div class="itens">
+                        <div class="icon">
+                            <span class="bi bi-cart-fill"></span>
+                        </div>
+                        <div class="right-texts">
+                            <div class="info">
+                                <h5>VENDAS ONLINE</h5>
+                                <small class="text">Visto por último há 2 horas</small>
+                                <h5 class="danger">15%</h5>
+                                <h3>2849</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itens">
+                        <div class="icon">
+                            <span class="bi bi-bag-fill"></span>
+                        </div>
+                        <div class="right-texts">
+                            <div class="info">
+                                <h5>VENDAS OFFILINE</h5>
+                                <small class="text">Visto por último há 2 horas</small>
+                                <h5 class="danger">15%</h5>
+                                <h3>2849</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="itens">
+                        <div class="icon">
+                            <span class="bi bi-people-fill"></span>
+                        </div>
+                        <div class="right-texts">
+                            <div class="info">
+                                <h5>NOVOS CLIENTES</h5>
+                                <small class="text">Visto por último há 2 horas</small>
+                                <h5 class="danger">15%</h5>
+                                <h3>2849</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="add-product">+ Adicionar produto</button>
+        </div>
+</body>
+
 </html>
