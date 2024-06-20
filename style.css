@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 
 * {
     margin: 0 ;
@@ -9,7 +7,7 @@
     list-style: none;
 }
 
-:root{
+:root {
     --color-primary: #6C9BCF;
     --color-danger: #FF0060;
     --color-success: #1B9C85;
@@ -31,7 +29,7 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-.dark-mode-variables{
+.dark-mode-variables {
     --color-background: #181a1e;
     --color-white: #202528;
     --color-dark: #edeffd;
@@ -40,33 +38,66 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-body{
+body {
     background: white;
     padding: 40px 4%;
     font-family: "Poppins", sans-serif;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 14rem auto 14rem;
+
+    background-color: antiquewhite;
+    border: 1px solid black;
 }
-.right{
+
+/* Az */
+aside {
+    background-color: cadetblue;
+    border: 2px solid red;
+}
+
+main {
+    background-color: burlywood;
+    border: 2px solid blue;
+}
+
+/* Jessica */
+.meio-superior {
+    background-color: beige;
+    border: 2px solid rebeccapurple;
+}
+
+/* Crislayne */
+.meio-inferior {
+    background-color: cornsilk;
+    border: 2px solid greenyellow;
+}
+
+/* Ysla */
+.right {
     color: white;
-    background-color: #181a1e;
     width: 200px;
+
+    background-color: #181a1e;
+    border: 2px solid red;
 }
-.profile-photo img{
+
+.profile-photo img {
     width: 30px;
     border-radius: 20px;
     margin: 10px;
 }
-.updates{
+
+.updates {
     display: grid ;
     grid-template-columns: 2.6rem auto;
     margin: 5px;  
     gap: 16px;
 }
-.update-div{
+
+.update-div {
     background-color: var(--color-dark);
     gap: 1;
     margin: 10px 0 0 12px;
@@ -76,10 +107,12 @@ body{
     border-radius: var(--border-radius-2);
     box-shadow: var(--box-shadow);
 }
-.sales-analytics{
+
+.sales-analytics {
     margin-top: 20px;
 }
-.sales-analytics .itens{
+
+.sales-analytics .itens {
     background-color: var(--color-dark);
     display: flex;
     justify-content: space-between;
@@ -91,7 +124,8 @@ body{
     border-radius: var(--border-radius-2);
     box-shadow: var(--box-shadow);
 }
-#add-product{
+
+#add-product {
     margin: 10px ;
     font-size: large;
     height: 90px;
@@ -99,7 +133,8 @@ body{
     border-radius: var(--card-border-radius);
     background-color: var(--color-primary);
 }
-.itens .icon{
+
+.itens .icon {
     background: var(--color-light);
     border-radius: 50%;
     display: flex;
@@ -108,11 +143,7 @@ body{
     width: 50px;
     height: 50px;
 }
-.danger{
+
+.danger {
     color: var(--color-danger) ;
 }
-
-
-
-
-
