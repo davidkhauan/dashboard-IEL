@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,61 +10,87 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="btn-header">
+                <button id="claro">
+                    <i class="bi bi-brightness-high-fill"></i>
+                </button>
+                <button id="escuro">
+                    <i class="bi bi-moon-fill"></i></i>
+                </button>
+            </div>
+            <p>Olá, <b>Usuário</b> Admin</p>
+            <img src="assets/profile-1.jpg">
+        </nav>
+    </header>
+
     <div class="container">
         <aside>
             <div class="top">
-                <div class="logo">
-                    <img src="assets/logo.png" alt="">
-                    <h1>EGA<span class="roxo">TOR</span></h1>
-                </div>
+                    <img src="assets/logo.png">
+                    <h1>EGA<span>TOR</span></h1>
             </div>
+
             <div class="sidebar">
-                <a href="#" class="active">
-                    <h3><i class="bi bi-columns-gap"></i> Painel</h3>
+                <a href="#">
+                    <i class="bi bi-columns-gap"></i>
+                    <h3>Painel</h3>
                 </a>
 
                 <a href="#">
-                    <h3><i class="bi bi-person"></i> Clientes</h3>
+                    <i class="bi bi-person"></i>
+                    <h3>Clientes</h3>
                 </a>
 
                 <a href="#">
-                    <h3><i class="bi bi-card-list"></i> Pedidos</h3>
+                    <i class="bi bi-card-list"></i>
+                    <h3>Pedidos</h3>
                 </a>
 
                 <a href="#">
-                    <h3><i class="bi bi-graph-up-arrow"></i> Analises</h3>
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <h3>Analises</h3>
                 </a>
 
                 <a href="#">
-                    <h3><i class="bi bi-envelope"></i> Mensagens<span>24</span></h3>
+                    <i class="bi bi-envelope"></i>
+                    <h3>Mensagens<span>24</span></h3>
                 </a>
 
                 <a href="#">
-                    <h3><i class="bi bi-clipboard-check"></i> Produtos </h3>
+                    <i class="bi bi-clipboard-check"></i> 
+                    <h3>Produtos</h3>
                 </a>
 
                 <a href="#">
-                    <h3><i class="bi bi-exclamation-circle"></i> Relatórios </h3>
+                    <i class="bi bi-exclamation-circle"></i>
+                    <h3>Relatórios</h3>
                 </a>
 
                 <a href="#">
-                    <h3><i class="bi bi-gear-fill"></i> Configurações </h3>
+                    <i class="bi bi-gear-fill"></i>
+                    <h3>Configurações</h3>
                 </a>
 
                 <a href="#">
-                    <h3><i class="bi bi-plus"></i> Adicionar produto </h3>
+                    <i class="bi bi-plus"></i>
+                    <h3>Adicionar produto</h3>
                 </a>
 
                 <a href="#">
-                    <h3><i class="bi bi-box-arrow-right"></i>Sair</h3>
+                    <i class="bi bi-box-arrow-right"></i>
+                    <h3 id="h3-logout">Sair</h3>
                 </a>
             </div>
         </aside>
+
         <main>
             <h1>Dashboard</h1>
             <div class="date">
                 <input type="date">
             </div>
+
             <div class="insights">
                 <div class="sales">
                     <span class="material-symbols-sharp"><i class="bi bi-arrow-up-right"></i></span>
@@ -74,6 +99,7 @@
                             <h3>Total Sales</h3>
                             <h1>R$25,00</h1>
                         </div>
+
                         <div class="progresso">
                             <svg>
                                 <circle r="30" cy="40" cx="40"></circle>
@@ -108,6 +134,7 @@
                             <h3>Total Income</h3>
                             <h1>R$10,864</h1>
                         </div>
+
                         <div class="progresso">
                             <svg>
                                 <circle r="30" cy="40" cx="40"></circle>
@@ -116,38 +143,6 @@
                         </div>
                     </div>
                     <small>Last 24 Hours</small>
-                </div>
-            </div>
-            <div class="meio-superior">
-                <div class="card" id="card-um">
-                    <div class="icone-fundo">
-                        <i>icone</i>
-                    </div>
-                    <h2>Vendas Totais</h2>
-                    <h3>US$ 25.024</h3>
-                    <div class="icone-fundo">
-                        <i>icone</i>
-                    </div>
-                </div>
-                <div class="card" id="card-dois">
-                    <div class="icone-fundo">
-                        <i>icone</i>
-                    </div>
-                    <h2>Despesas Totais</h2>
-                    <h3>US$ 14.180</h3>
-                    <div class="icone-fundo">
-                        <i>icone</i>
-                    </div>
-                </div>
-                <div class="card" id="card-tres">
-                    <div class="icone-fundo">
-                        <i>icone</i>
-                    </div>
-                    <h2>Renda Total</h2>
-                    <h3>US$ 10.864</h3>
-                    <div class="icone-fundo">
-                        <i>icone</i>
-                    </div>
                 </div>
             </div>
 
@@ -168,71 +163,59 @@
                             <td>Foldoble Mini Drone</td>
                             <td>85631</td>
                             <td>Due</td>
-                            <td>Pending</td>
+                            <td id="pending">Pending</td>
                             <td>Details</td>
                         </tr>
                         <tr>
                             <td>LARVENDER KF102 Drone</td>
                             <td>36378</td>
                             <td>Refunded</td>
-                            <td>Declined</td>
+                            <td id="declined">Declined</td>
                             <td>Details</td>
                         </tr>
                         <tr>
                             <td>Ruko F11 Pro Drone</td>
                             <td>49347</td>
                             <td>Due</td>
-                            <td>Pending</td>
+                            <td id="pending">Pending</td>
                             <td>Details</td>
                         </tr>
                         <tr>
                             <td>Drone with Camera Drone</td>
                             <td>96996</td>
                             <td>Pald</td>
-                            <td>Delivered</td>
+                            <td id="delivered">Delivered</td>
                             <td>Details</td>
                         </tr>
                         <tr>
                             <td>GPS 4k Drone</td>
                             <td>22821</td>
                             <td>Pald</td>
-                            <td>Delivered</td>
+                            <td id="delivered">Delivered</td>
                             <td>Details</td>
                         </tr>
                         <tr>
                             <td>DJI Air 2S</td>
                             <td>81475</td>
                             <td>Due</td>
-                            <td>Pending</td>
+                            <td id="pending">Pending</td>
                             <td>Details</td>
                         </tr>
                         <tr>
                             <td>Lozenge Drone</td>
                             <td>00482</td>
                             <td>Pald</td>
-                            <td>Delivered</td>
+                            <td id="delivered">Delivered</td>
                             <td>Details</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <p>Show All</p>
             </div>
+            <p>Show All</p>
         </main>
 
         <div class="right">
-            <div class="top">
-                <button id="escuro">
-                    <i class="bi bi-brightness-high-fill"></i></button>
-                <div class="profile">
-                    <div class="aparencia">
-                        <button id="escuro"><i class="bi bi-brightness-high-fill"></i></button>
-                        <button id="claro"><i class="bi bi-moon-fill"></i></i></button>
-                    </div>
-                    <p>Olá, <b>Usuário</b></p>
-                </div>
-            </div>
-
             <div class="recent-updates">
                 <h3>Recent Updates</h3>
                 <div class="update-div">
@@ -244,6 +227,7 @@
                             <p><b>Mike Tyson</b> Recebeu o pedido</p>
                         </div>
                     </div>
+
                     <div class="updates">
                         <div class="profile-photo">
                             <img src="assets/profile-3.jpg" alt="Diana Ayl">
@@ -252,6 +236,7 @@
                             <p><b>Diana Ayl</b> Recebeu o pedido</p>
                         </div>
                     </div>
+
                     <div class="updates">
                         <div class="profile-photo">
                             <img src="assets/profile-4.jpg" alt="Diana Ayl">
@@ -277,6 +262,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="itens">
                         <div class="icon">
                             <span class="bi bi-bag-fill"></span>
@@ -290,6 +276,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="itens">
                         <div class="icon">
                             <span class="bi bi-people-fill"></span>
@@ -304,10 +291,8 @@
                         </div>
                     </div>
                 </div>
+                <button id="add-product">+ Adicionar produto</button>
             </div>
-
-            <button id="add-product">+ Adicionar produto</button>
         </div>
 </body>
-
 </html>
