@@ -9,11 +9,14 @@
 
 :root {
     --color-primary: #6C9BCF;
+    --color-violet: #7380E2;
+    --color-rose: #FF7782;
     --color-danger: #FF0060;
     --color-success: #1B9C85;
     --color-warning: #F7D060;
     --color-white: #fff;
     --color-info-dark: #7d8da1;
+    --color-dark-white: #e2e3e6;
     --color-dark: #363949;
     --color-light: rgba(132, 139, 200, 0.18);
     --color-dark-variant: #677483;
@@ -39,55 +42,120 @@
 }
 
 body {
-    background: white;
-    padding: 12px;
-    display: grid;
     font-family: "Poppins", sans-serif;
+    background-color: var(--color-background);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden
 }
 
-aside img{ 
+.container {
+    display: grid;
+    grid-template-columns: 14rem auto 20rem;
+    background-color: var(--color-background);
+    overflow-x: hidden;
+}
+
+header {
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav p {
+    font-size: 20px;
+}
+
+nav img {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 24%;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+nav img:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    transform: scale(1.1);
+}
+
+nav .btn-header {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.btn-header button:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.1);
+}
+
+.btn-header #claro {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+}
+
+.btn-header #escuro {
+    color: var(--color-white);
+    background-color: var(--color-violet);
+}
+
+aside {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+aside img { 
     height: 50px;
-    width: 50px;}
-
-a{
-    color: var(--color-dark);
+    width: 50px;
 }
 
-h1{
+aside .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 5px;
+}
+
+.top h1 span {
+    color: var(--color-rose);
+}
+
+h1 {
     font-weight: 800;
     font-size: 1.8rem;   
 }
 
-h2{
+h2 {
     font-size: 1.4rem;
 }
 
-h3{
+h3 {
     font-size: 0.87rem;
 }
 
-h4{
+h4 {
     font-size: 0.8;
 }
 
-aside{
-    height: 100vh;
-}
-
-aside .top{
-    background-color: var(--color-white);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1.4rem;
-}
-
-aside .logo{
-    display: flex;
-    gap: 1rem;
-}
-
-aside .sidebar{
+aside .sidebar {
     background-color: var(purple);
     display: flex;
     flex-direction: column;
@@ -96,39 +164,37 @@ aside .sidebar{
     top: 1rem; 
 }
 
-aside .h3{
-    font-weight: 400;
-}
-
-aside .sidebar a{
+.sidebar a {
     display: flex;
-    color: var(purple);
-    margin-left: 2rem;
-    gap: 1rem;
+    flex-direction: row;
     align-items: center;
+    gap: 10px;
+    color: var(--color-dark);
+    text-decoration: none;
+    margin-left: 1rem;
+
     height: 3.2rem;
     transition: all .1s ease-in;
 }
 
-aside .sidebar a span{
+aside .h3 {
+    font-weight: 400;
+}
+
+.sidebar a span {
     transition: all .1s ease-in;
 }
 
-aside .sidebar a:last-child{
+.sidebar a:last-child {
     position: absolute;
     bottom: 1rem;
     width: 100%;
+    margin: 0;
 }
 
-aside .sidebar a.active{
-    background:  #6c9acf8e ;
-    color: rgb(66, 0, 128);
-    margin-left: 0;
-    border-left: 5px solid purple;
-}
-
-aside .sidebar span{
+.sidebar a span {
     background-color: rgba(255, 0, 0, 0.822);
+    margin-left: 5px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 5px;
@@ -137,198 +203,204 @@ aside .sidebar span{
     height: 30px;
 }
 
-aside .sidebar a.active::before{
-    content: '';
-    width: 6px;
-    height: 100%;
-    background-color: purple;
-}
-aside .sidebar a:hover{
-    color: purple;
+.sidebar a:hover {
+    color: var(--color-dark) ;
+    background-color: var(--color-primary);
 }
 
 main {
-    background-color: burlywood;
-    border: 2px solid blue;
     margin-top: 1.4rem;
-    width: auto;
+    width: 90%;
+    margin: 0 auto;
 }
 
-main input{
+main input {
     background-color: transparent;
     border: 0;
     outline: 0;
     color: var(--clr-dark);
 }
 
-main .date{
+main .date {
     display: inline-block;
-    background-color: var(--clr-white);
+    background-color: var(--color-info-dark);
     border-radius: var(--border-radius-1);
     margin-top: 1rem;
     padding: 0.5rem 1.6rem;
+    margin-left: 10px;
 }
 
-main .insights{
+main .insights {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1.6rem;
+    margin: 10px;
 }
 
-main .insights>div{
-    background-color: var(--clr-white);
+.insights > div {
+    background-color: var(--color-dark-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     margin-top: 1rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all .3s ease;
 }
 
-main .insights > div:hover{
-    box-shadow: none;
+.insights > div:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.05);
 }
 
-main .insights > div span{
+.insights > div span {
     background: coral;
     padding: 0.5rem;
     border-radius: 50%;
     color: var(--clr-white);
     font-size: 2rem;
-    ;
 }
 
-main .insights > div.expenses span{
+.insights > div.expenses span {
     background: var(--color-danger);
 }
 
-main .insights > div.income span{
+.insights > div.income span {
     background: var(--color-success);
 }
 
-main .insights > div .middle{
+.insights > div .middle {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-main .insights > div .middle h1{
+.insights > div .middle h1 {
     font-size: 1.6rem;
 }
 
-main h1{
+main h1 {
+    color: var(--clr-dark);
+    margin-left: 10px;
+}
+
+main p {
+    text-align: center;
+}
+
+.insights h1 {
     color: var(--clr-dark);
 }
 
-main .insights h1{
+.insights h3 {
     color: var(--clr-dark);
 }
 
-main .insights h3{
+.insights p {
     color: var(--clr-dark);
 }
 
-main .insights p{
-    color: var(--clr-dark);
-}
-
-main .insights .progress{
+.insights .progresso {
     position: relative;
     height: 68px;
     width: 68px;
     border-radius: 50px;
 }
 
-main .insights svg{
-    height: 150px;
-    height: 150px;
+.insights svg {
+    height: 100px;
+    width: 50;
     position: absolute;
     top: 1;
 }
 
-main .insights svg circle{
+.insights svg circle {
     fill: none;
     stroke: var(--color-primary);
     transform: rotate(270,80,80);
     stroke-width: 5;
 }
 
-main .insights .sales svg circle{
+.insights .sales svg circle {
     stroke-dashoffset: 10;
     stroke-dasharray: 150;
-
 }
 
-main .insights .expenses svg circle{
+.insights .expenses svg circle {
     stroke-dashoffset: 0;
     stroke-dasharray: 150;
 }
 
-main .insights .income svg circle{
+.insights .income svg circle {
     stroke-dashoffset: 0;
     stroke-dasharray: 150;
     stroke: var(--color-primary);
 }
 
-main .insights .progress .number{
+.insights .progresso .number {
     position: absolute;
     top: 5%;
     left: 5%;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-main .recent_order{
+.recent_order {
     margin-top: 2rem;
 }
 
-main .recent_order h2{
+.recent_order h2 {
     color: var(--clr-dark);
-}
-
-main .recent_order table{
-    background-color: var(--clr-white);
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 14rem auto 18rem;
-    background-color: antiquewhite;
-    border: 1px solid black;
-}
-.nav-bar{
-    display: flex;
-}
-
-
-main {
-    background-color: burlywood;
-    border: 2px solid blue;
-}
-
-/* Jessica */
-.meio-superior {
-    background-color: beige;
-    border: 2px solid rebeccapurple;
 }
 
 /* Crislayne */
 .meio-inferior {
-    background-color: cornsilk;
-    border: 2px solid greenyellow;
+    background-color: var(--color-dark-white);
+    margin: 10px;
+    border-radius: 25px;
+    margin-top: 10rem;
+    padding: 20px;
+}
+
+.meio-inferior table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.meio-inferior table th, .meio-inferior table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.meio-inferior table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+table tr td:last-child {
+    color: var(--color-violet);
+}
+
+table #pending {
+    color: goldenrod;
+}
+
+table #declined {
+    color: rgb(170, 17, 17);
+}
+
+table #delivered {
+    color: var(--color-violet);
 }
 
 /* Ysla */
 .right {
-    color: white;
-    width: 288px;
-    background-color: #181a1e;
-    padding: 10px;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .profile-photo img {
@@ -337,18 +409,28 @@ main {
     margin: 10px;
 }
 
+.recent-updates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
 .updates {
-    display: grid ;
-    grid-template-columns: 2.6rem auto;
-    margin: 5px;  
-    gap: 16px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
 }
 
 .update-div {
-    background-color: var(--color-dark);
+    background-color: var(--color-dark-white);
     gap: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 10px 0 10px 12px;
-    width: 260px;
+    width: 80%;
     border-radius: var(--border-radius-2);
     box-shadow: var(--box-shadow);
     transition: background-color 0.3s ease;
@@ -358,32 +440,38 @@ main {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
+    width: 95%;
 }
 .sales-analytics .itens {
-    background-color: var(--color-dark);
+    background-color: var(--color-dark-white);
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: var(--border-radius-2);
     box-shadow: var(--box-shadow);
     flex-wrap: wrap;
-    width: 100%;
+    width: 85%;
 }
 
 #add-product {
     margin: 10px ;
     font-size: large;
     height: 90px;
-    width: 270px;
+    width: 80%;
     border-radius: var(--card-border-radius);
     background-color: var(--color-primary);
     border: none;
+    cursor: pointer;
     transition: 0.3s all ease;
 }
-#add-product:hover{
+
+#add-product:hover {
     background-color: var(--color-dark);
     transform: scale(1.02);
+    color: var(--color-white);
 }
 
 .itens .icon {
@@ -392,8 +480,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .danger {
