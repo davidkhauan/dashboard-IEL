@@ -223,7 +223,7 @@ main input {
 
 main .date {
     display: inline-block;
-    background-color: var(--color-info-dark);
+    background-color: transparent;
     border-radius: var(--border-radius-1);
     margin-top: 1rem;
     padding: 0.5rem 1.6rem;
@@ -253,7 +253,7 @@ main .insights {
 
 .insights > div span {
     background: coral;
-    padding: 0.5rem;
+    padding: 0.4rem;
     border-radius: 50%;
     color: var(--clr-white);
     font-size: 2rem;
@@ -337,8 +337,8 @@ main p {
 
 .insights .progresso .number {
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 45%;
+    left: 40%;
     height: 100%;
     width: 100%;
 }
